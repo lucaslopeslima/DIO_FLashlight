@@ -9,10 +9,6 @@
 <br><br>
 
 # Conteúdo:
-- Conhecendo o React Native
-  - O que é react-native?
-  - O que é cross-platform?
-  - Origem do RN
 - Documentação:
   - Componentes
   - API
