@@ -13,8 +13,7 @@ import imagelight from './assets/icons/logo-dio.png';
 import Torch from 'react-native-torch';
 import RNShake from 'react-native-shake';
 
-const collorOff = '#454545'
-
+const collorOff = '#454545';
 
 const App = () => {
   //const toggle = true; //false
@@ -27,15 +26,15 @@ const App = () => {
   useEffect(() => {
     Torch.switchState(toggle);
   }, [toggle]);
-  useEffect(()=>{
-    const subscription = RNShake.addListener(()=>{
+  useEffect(() => {
+    const subscription = RNShake.addListener(() => {
       setToggle(toggle => {
         return !toggle;
-      })
-    })
+      });
+    });
     //chama quando o componente for desmontado
-    return ()=> subscription.remove()
-  }, [])
+    return () => subscription.remove();
+  }, []);
 
   return (
     <SafeAreaView style={style.container}>
